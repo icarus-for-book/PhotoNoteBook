@@ -27,7 +27,7 @@ PhotoNoteBook
 UI 흐름
 -------
 
-![UI흐름도](images/ui_flow.png)
+![UI흐름도](https://github.com/icarus-for-book/PhotoNoteBook/blob/master/images/ui_flow.png?raw=true)
 
 다음과 같은 시나리오대로 사용이 가능하다.
 
