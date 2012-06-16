@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A7CAED01583971A0065BD99 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7CAECF1583971A0065BD99 /* UIKit.framework */; };
+		3A7CAED21583971A0065BD99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7CAED11583971A0065BD99 /* Foundation.framework */; };
+		3A7CAED41583971A0065BD99 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7CAED31583971A0065BD99 /* CoreGraphics.framework */; };
+		3A7CAEDA1583971A0065BD99 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A7CAED81583971A0065BD99 /* InfoPlist.strings */; };
+		3A7CAEDC1583971A0065BD99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7CAEDB1583971A0065BD99 /* main.m */; };
+		3A7CAEE01583971A0065BD99 /* PNBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7CAEDF1583971A0065BD99 /* PNBAppDelegate.m */; };
+		3A7CAEE31583971A0065BD99 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A7CAEE11583971A0065BD99 /* MainStoryboard.storyboard */; };
+		3A7CAEE61583971A0065BD99 /* PNBNoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7CAEE51583971A0065BD99 /* PNBNoteListViewController.m */; };
+		3A7CAEE91583971A0065BD99 /* PNBDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7CAEE81583971A0065BD99 /* PNBDetailViewController.m */; };
+		3A7CAEF3158397740065BD99 /* PNBNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7CAEF2158397740065BD99 /* PNBNote.m */; };
+		3A7CAEF6158397950065BD99 /* PNBNoteMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7CAEF5158397950065BD99 /* PNBNoteMetadata.m */; };
+		3A7CAEF9158397EC0065BD99 /* PNBPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7CAEF8158397EC0065BD99 /* PNBPage.m */; };
+		3AE005F71584778900D12D05 /* note-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE005F61584778900D12D05 /* note-icon.png */; };
+		3AE005FD1584798200D12D05 /* PNBPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE005FC1584798200D12D05 /* PNBPageViewController.m */; };
+		3AE0060515847C0900D12D05 /* NSFileManager+Dir.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0060415847C0900D12D05 /* NSFileManager+Dir.m */; };
+		3AE0060815847DE000D12D05 /* PNBAddNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0060715847DE000D12D05 /* PNBAddNoteViewController.m */; };
+		3AE0060B1584CF0900D12D05 /* NSDate+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0060A1584CF0900D12D05 /* NSDate+Format.m */; };
+		3AE0060E1584D2B500D12D05 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0060D1584D2B500D12D05 /* LoadingView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3AE006101584D4A700D12D05 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE0060F1584D4A700D12D05 /* QuartzCore.framework */; };
+		3AE006131584FF0A00D12D05 /* PNBNoteEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE006121584FF0A00D12D05 /* PNBNoteEntry.m */; };
+		3AE0061A15850F7100D12D05 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0061915850F7100D12D05 /* UIImage+Resize.m */; };
+		BDEFC5EA1585A52300EA1BAE /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = BDEFC5E11585A52300EA1BAE /* Icon-72.png */; };
+		BDEFC5EB1585A52300EA1BAE /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BDEFC5E21585A52300EA1BAE /* Icon-72@2x.png */; };
+		BDEFC5EC1585A52300EA1BAE /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BDEFC5E31585A52300EA1BAE /* Icon-Small-50.png */; };
+		BDEFC5ED1585A52300EA1BAE /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BDEFC5E41585A52300EA1BAE /* Icon-Small-50@2x.png */; };
+		BDEFC5EE1585A52300EA1BAE /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = BDEFC5E51585A52300EA1BAE /* Icon-Small.png */; };
+		BDEFC5EF1585A52300EA1BAE /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BDEFC5E61585A52300EA1BAE /* Icon-Small@2x.png */; };
+		BDEFC5F01585A52300EA1BAE /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BDEFC5E71585A52300EA1BAE /* Icon.png */; };
+		BDEFC5F11585A52300EA1BAE /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BDEFC5E81585A52300EA1BAE /* Icon@2x.png */; };
+		BDEFC5F21585A52300EA1BAE /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = BDEFC5E91585A52300EA1BAE /* iTunesArtwork */; };
+		BDEFC5F41585A5EC00EA1BAE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BDEFC5F31585A5EC00EA1BAE /* Default@2x.png */; };
+		BDEFC5F61585A61300EA1BAE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BDEFC5F51585A61300EA1BAE /* Default.png */; };
+		BDEFC6071585E59E00EA1BAE /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BDEFC6061585E59E00EA1BAE /* Icon@2x.png */; };
+		BDEFC60A1585E5A100EA1BAE /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BDEFC6091585E5A100EA1BAE /* Icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A7CAECB1583971A0065BD99 /* PhotoNoteBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoNoteBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A7CAECF1583971A0065BD99 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3A7CAED11583971A0065BD99 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3A7CAED31583971A0065BD99 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3A7CAED71583971A0065BD99 /* PhotoNoteBook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhotoNoteBook-Info.plist"; sourceTree = "<group>"; };
+		3A7CAED91583971A0065BD99 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3A7CAEDB1583971A0065BD99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A7CAEDD1583971A0065BD99 /* PhotoNoteBook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoNoteBook-Prefix.pch"; sourceTree = "<group>"; };
+		3A7CAEDE1583971A0065BD99 /* PNBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNBAppDelegate.h; sourceTree = "<group>"; };
+		3A7CAEDF1583971A0065BD99 /* PNBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNBAppDelegate.m; sourceTree = "<group>"; };
+		3A7CAEE21583971A0065BD99 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		3A7CAEE41583971A0065BD99 /* PNBNoteListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNBNoteListViewController.h; sourceTree = "<group>"; };
+		3A7CAEE51583971A0065BD99 /* PNBNoteListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNBNoteListViewController.m; sourceTree = "<group>"; };
+		3A7CAEE71583971A0065BD99 /* PNBDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNBDetailViewController.h; sourceTree = "<group>"; };
+		3A7CAEE81583971A0065BD99 /* PNBDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNBDetailViewController.m; sourceTree = "<group>"; };
+		3A7CAEF1158397740065BD99 /* PNBNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBNote.h; sourceTree = "<group>"; };
+		3A7CAEF2158397740065BD99 /* PNBNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBNote.m; sourceTree = "<group>"; };
+		3A7CAEF4158397950065BD99 /* PNBNoteMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBNoteMetadata.h; sourceTree = "<group>"; };
+		3A7CAEF5158397950065BD99 /* PNBNoteMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBNoteMetadata.m; sourceTree = "<group>"; };
+		3A7CAEF7158397EC0065BD99 /* PNBPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBPage.h; sourceTree = "<group>"; };
+		3A7CAEF8158397EC0065BD99 /* PNBPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBPage.m; sourceTree = "<group>"; };
+		3AE005F61584778900D12D05 /* note-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "note-icon.png"; sourceTree = "<group>"; };
+		3AE005FB1584798200D12D05 /* PNBPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBPageViewController.h; sourceTree = "<group>"; };
+		3AE005FC1584798200D12D05 /* PNBPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBPageViewController.m; sourceTree = "<group>"; };
+		3AE0060315847C0900D12D05 /* NSFileManager+Dir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Dir.h"; sourceTree = "<group>"; };
+		3AE0060415847C0900D12D05 /* NSFileManager+Dir.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Dir.m"; sourceTree = "<group>"; };
+		3AE0060615847DE000D12D05 /* PNBAddNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBAddNoteViewController.h; sourceTree = "<group>"; };
+		3AE0060715847DE000D12D05 /* PNBAddNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBAddNoteViewController.m; sourceTree = "<group>"; };
+		3AE006091584CF0900D12D05 /* NSDate+Format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Format.h"; sourceTree = "<group>"; };
+		3AE0060A1584CF0900D12D05 /* NSDate+Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Format.m"; sourceTree = "<group>"; };
+		3AE0060C1584D2B500D12D05 /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		3AE0060D1584D2B500D12D05 /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		3AE0060F1584D4A700D12D05 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3AE006111584FF0900D12D05 /* PNBNoteEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBNoteEntry.h; sourceTree = "<group>"; };
+		3AE006121584FF0A00D12D05 /* PNBNoteEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBNoteEntry.m; sourceTree = "<group>"; };
+		3AE0061815850F7100D12D05 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		3AE0061915850F7100D12D05 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		BDEFC5E11585A52300EA1BAE /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		BDEFC5E21585A52300EA1BAE /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		BDEFC5E31585A52300EA1BAE /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		BDEFC5E41585A52300EA1BAE /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		BDEFC5E51585A52300EA1BAE /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		BDEFC5E61585A52300EA1BAE /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		BDEFC5E71585A52300EA1BAE /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		BDEFC5E81585A52300EA1BAE /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		BDEFC5E91585A52300EA1BAE /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		BDEFC5F31585A5EC00EA1BAE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		BDEFC5F51585A61300EA1BAE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		BDEFC6061585E59E00EA1BAE /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		BDEFC6091585E5A100EA1BAE /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		BDEFC6131585ECE300EA1BAE /* PhotoNoteBook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PhotoNoteBook.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A7CAEC81583971A0065BD99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AE006101584D4A700D12D05 /* QuartzCore.framework in Frameworks */,
+				3A7CAED01583971A0065BD99 /* UIKit.framework in Frameworks */,
+				3A7CAED21583971A0065BD99 /* Foundation.framework in Frameworks */,
+				3A7CAED41583971A0065BD99 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A7CAEC01583971A0065BD99 = {
+			isa = PBXGroup;
+			children = (
+				BDEFC6091585E5A100EA1BAE /* Icon.png */,
+				BDEFC6061585E59E00EA1BAE /* Icon@2x.png */,
+				3A7CAED51583971A0065BD99 /* PhotoNoteBook */,
+				3A7CAECE1583971A0065BD99 /* Frameworks */,
+				3A7CAECC1583971A0065BD99 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A7CAECC1583971A0065BD99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A7CAECB1583971A0065BD99 /* PhotoNoteBook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A7CAECE1583971A0065BD99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AE0060F1584D4A700D12D05 /* QuartzCore.framework */,
+				3A7CAECF1583971A0065BD99 /* UIKit.framework */,
+				3A7CAED11583971A0065BD99 /* Foundation.framework */,
+				3A7CAED31583971A0065BD99 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A7CAED51583971A0065BD99 /* PhotoNoteBook */ = {
+			isa = PBXGroup;
+			children = (
+				BDEFC6131585ECE300EA1BAE /* PhotoNoteBook.entitlements */,
+				3AE0060215847BCA00D12D05 /* Util */,
+				3A7CAEF01583972C0065BD99 /* Model */,
+				3A7CAEEF158397230065BD99 /* UI */,
+				3A7CAED61583971A0065BD99 /* Supporting Files */,
+			);
+			path = PhotoNoteBook;
+			sourceTree = "<group>";
+		};
+		3A7CAED61583971A0065BD99 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AE005F01584678200D12D05 /* images */,
+				3A7CAEDE1583971A0065BD99 /* PNBAppDelegate.h */,
+				3A7CAEDF1583971A0065BD99 /* PNBAppDelegate.m */,
+				3A7CAED71583971A0065BD99 /* PhotoNoteBook-Info.plist */,
+				3A7CAED81583971A0065BD99 /* InfoPlist.strings */,
+				3A7CAEDB1583971A0065BD99 /* main.m */,
+				3A7CAEDD1583971A0065BD99 /* PhotoNoteBook-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A7CAEEF158397230065BD99 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3A7CAEE11583971A0065BD99 /* MainStoryboard.storyboard */,
+				3AE0060115847A1300D12D05 /* AddNote */,
+				3AE00600158479A400D12D05 /* Detail */,
+				3AE005FF1584799E00D12D05 /* Page List */,
+				3AE005FE1584799500D12D05 /* Note List */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		3A7CAEF01583972C0065BD99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A7CAEF1158397740065BD99 /* PNBNote.h */,
+				3A7CAEF2158397740065BD99 /* PNBNote.m */,
+				3A7CAEF4158397950065BD99 /* PNBNoteMetadata.h */,
+				3A7CAEF5158397950065BD99 /* PNBNoteMetadata.m */,
+				3A7CAEF7158397EC0065BD99 /* PNBPage.h */,
+				3A7CAEF8158397EC0065BD99 /* PNBPage.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3AE005F01584678200D12D05 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				BDEFC5F51585A61300EA1BAE /* Default.png */,
+				BDEFC5F31585A5EC00EA1BAE /* Default@2x.png */,
+				BDEFC5E11585A52300EA1BAE /* Icon-72.png */,
+				BDEFC5E21585A52300EA1BAE /* Icon-72@2x.png */,
+				BDEFC5E31585A52300EA1BAE /* Icon-Small-50.png */,
+				BDEFC5E41585A52300EA1BAE /* Icon-Small-50@2x.png */,
+				BDEFC5E51585A52300EA1BAE /* Icon-Small.png */,
+				BDEFC5E61585A52300EA1BAE /* Icon-Small@2x.png */,
+				BDEFC5E71585A52300EA1BAE /* Icon.png */,
+				BDEFC5E81585A52300EA1BAE /* Icon@2x.png */,
+				BDEFC5E91585A52300EA1BAE /* iTunesArtwork */,
+				3AE005F61584778900D12D05 /* note-icon.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		3AE005FE1584799500D12D05 /* Note List */ = {
+			isa = PBXGroup;
+			children = (
+				3A7CAEE41583971A0065BD99 /* PNBNoteListViewController.h */,
+				3A7CAEE51583971A0065BD99 /* PNBNoteListViewController.m */,
+				3AE006111584FF0900D12D05 /* PNBNoteEntry.h */,
+				3AE006121584FF0A00D12D05 /* PNBNoteEntry.m */,
+			);
+			name = "Note List";
+			sourceTree = "<group>";
+		};
+		3AE005FF1584799E00D12D05 /* Page List */ = {
+			isa = PBXGroup;
+			children = (
+				3AE005FB1584798200D12D05 /* PNBPageViewController.h */,
+				3AE005FC1584798200D12D05 /* PNBPageViewController.m */,
+			);
+			name = "Page List";
+			sourceTree = "<group>";
+		};
+		3AE00600158479A400D12D05 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				3A7CAEE71583971A0065BD99 /* PNBDetailViewController.h */,
+				3A7CAEE81583971A0065BD99 /* PNBDetailViewController.m */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		3AE0060115847A1300D12D05 /* AddNote */ = {
+			isa = PBXGroup;
+			children = (
+				3AE0060615847DE000D12D05 /* PNBAddNoteViewController.h */,
+				3AE0060715847DE000D12D05 /* PNBAddNoteViewController.m */,
+			);
+			name = AddNote;
+			sourceTree = "<group>";
+		};
+		3AE0060215847BCA00D12D05 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3AE0060C1584D2B500D12D05 /* LoadingView.h */,
+				3AE0060D1584D2B500D12D05 /* LoadingView.m */,
+				3AE0060315847C0900D12D05 /* NSFileManager+Dir.h */,
+				3AE0060415847C0900D12D05 /* NSFileManager+Dir.m */,
+				3AE006091584CF0900D12D05 /* NSDate+Format.h */,
+				3AE0060A1584CF0900D12D05 /* NSDate+Format.m */,
+				3AE0061815850F7100D12D05 /* UIImage+Resize.h */,
+				3AE0061915850F7100D12D05 /* UIImage+Resize.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A7CAECA1583971A0065BD99 /* PhotoNoteBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A7CAEEC1583971A0065BD99 /* Build configuration list for PBXNativeTarget "PhotoNoteBook" */;
+			buildPhases = (
+				3A7CAEC71583971A0065BD99 /* Sources */,
+				3A7CAEC81583971A0065BD99 /* Frameworks */,
+				3A7CAEC91583971A0065BD99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoNoteBook;
+			productName = PhotoNoteBook;
+			productReference = 3A7CAECB1583971A0065BD99 /* PhotoNoteBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A7CAEC21583971A0065BD99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PNB;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 3A7CAEC51583971A0065BD99 /* Build configuration list for PBXProject "PhotoNoteBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3A7CAEC01583971A0065BD99;
+			productRefGroup = 3A7CAECC1583971A0065BD99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A7CAECA1583971A0065BD99 /* PhotoNoteBook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A7CAEC91583971A0065BD99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A7CAEDA1583971A0065BD99 /* InfoPlist.strings in Resources */,
+				3A7CAEE31583971A0065BD99 /* MainStoryboard.storyboard in Resources */,
+				3AE005F71584778900D12D05 /* note-icon.png in Resources */,
+				BDEFC5EA1585A52300EA1BAE /* Icon-72.png in Resources */,
+				BDEFC5EB1585A52300EA1BAE /* Icon-72@2x.png in Resources */,
+				BDEFC5EC1585A52300EA1BAE /* Icon-Small-50.png in Resources */,
+				BDEFC5ED1585A52300EA1BAE /* Icon-Small-50@2x.png in Resources */,
+				BDEFC5EE1585A52300EA1BAE /* Icon-Small.png in Resources */,
+				BDEFC5EF1585A52300EA1BAE /* Icon-Small@2x.png in Resources */,
+				BDEFC5F01585A52300EA1BAE /* Icon.png in Resources */,
+				BDEFC5F11585A52300EA1BAE /* Icon@2x.png in Resources */,
+				BDEFC5F21585A52300EA1BAE /* iTunesArtwork in Resources */,
+				BDEFC5F41585A5EC00EA1BAE /* Default@2x.png in Resources */,
+				BDEFC5F61585A61300EA1BAE /* Default.png in Resources */,
+				BDEFC6071585E59E00EA1BAE /* Icon@2x.png in Resources */,
+				BDEFC60A1585E5A100EA1BAE /* Icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A7CAEC71583971A0065BD99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A7CAEDC1583971A0065BD99 /* main.m in Sources */,
+				3A7CAEE01583971A0065BD99 /* PNBAppDelegate.m in Sources */,
+				3A7CAEE61583971A0065BD99 /* PNBNoteListViewController.m in Sources */,
+				3A7CAEE91583971A0065BD99 /* PNBDetailViewController.m in Sources */,
+				3A7CAEF3158397740065BD99 /* PNBNote.m in Sources */,
+				3A7CAEF6158397950065BD99 /* PNBNoteMetadata.m in Sources */,
+				3A7CAEF9158397EC0065BD99 /* PNBPage.m in Sources */,
+				3AE005FD1584798200D12D05 /* PNBPageViewController.m in Sources */,
+				3AE0060515847C0900D12D05 /* NSFileManager+Dir.m in Sources */,
+				3AE0060815847DE000D12D05 /* PNBAddNoteViewController.m in Sources */,
+				3AE0060B1584CF0900D12D05 /* NSDate+Format.m in Sources */,
+				3AE0060E1584D2B500D12D05 /* LoadingView.m in Sources */,
+				3AE006131584FF0A00D12D05 /* PNBNoteEntry.m in Sources */,
+				3AE0061A15850F7100D12D05 /* UIImage+Resize.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3A7CAED81583971A0065BD99 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A7CAED91583971A0065BD99 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3A7CAEE11583971A0065BD99 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A7CAEE21583971A0065BD99 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A7CAEEA1583971A0065BD99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3A7CAEEB1583971A0065BD99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A7CAEED1583971A0065BD99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PhotoNoteBook/PhotoNoteBook.entitlements;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoNoteBook/PhotoNoteBook-Prefix.pch";
+				INFOPLIST_FILE = "PhotoNoteBook/PhotoNoteBook-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3A7CAEEE1583971A0065BD99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PhotoNoteBook/PhotoNoteBook.entitlements;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoNoteBook/PhotoNoteBook-Prefix.pch";
+				INFOPLIST_FILE = "PhotoNoteBook/PhotoNoteBook-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A7CAEC51583971A0065BD99 /* Build configuration list for PBXProject "PhotoNoteBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A7CAEEA1583971A0065BD99 /* Debug */,
+				3A7CAEEB1583971A0065BD99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A7CAEEC1583971A0065BD99 /* Build configuration list for PBXNativeTarget "PhotoNoteBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A7CAEED1583971A0065BD99 /* Debug */,
+				3A7CAEEE1583971A0065BD99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A7CAEC21583971A0065BD99 /* Project object */;
+}
