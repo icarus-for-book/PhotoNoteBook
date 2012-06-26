@@ -1,10 +1,10 @@
 PhotoNoteBook
 =============
 
-이 앱은 iCloud를 마이크로소프트 잡지에 연재하면서 예제로 사용하기 위해서 
-만든 앱으로 iCloud 방식 중 Document-Based Storage 방식을 사용 방법을 
+이 앱은 iCloud를 [마이크로소프트웨어](http://www.imaso.co.kr/) 
+2012년 7월, 8월에 연재된 연재된 글에서 사용될 목적으로 만들어진 
+앱으로 iCloud 방식 중 Document-Based Storage 방식을 사용 방법을 
 보여주고 있다. 
-
 
 
 주요 용어
@@ -50,10 +50,9 @@ UI 흐름
 4. 앱을 빌드한다.
 
 
-
-
 문의 
 ----
 
 - [10apps 홈페이지](http://10apps.tistory.com/)
+- [twitter @10_apps](https://twitter.com/#!/10_apps)
 
